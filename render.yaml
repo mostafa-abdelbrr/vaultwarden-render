@@ -11,13 +11,15 @@ services:
   - fromGroup: mysql
 
 envVarGroups:
-- name: mysql
+- name: VaultWarden
   envVars:
-  - key: MYSQL_DATABASE
-    value: mysql
-  - key: MYSQL_USER
-    value: mysql
-  - key: MYSQL_PASSWORD
-    generateValue: true
-  - key: MYSQL_ROOT_PASSWORD
-    generateValue: true
+  - key: ADMIN_TOKEN
+    generatevalue: true
+  - key: DATABASE_MAX_CONNS
+    value: 7
+  - key: DOMAIN
+    value: https://vaultwarden-darkredtitan.herokuapp.com
+  - key: SIGNUPS_ALLOWED
+    value: false
+  - key: WEB_VAULT_ENABLED
+    value: false
