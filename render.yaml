@@ -3,9 +3,6 @@ services:
   - type: web
     name: vaultwarden-render
     runtime: image
-    image:
-      url: vaultwarden/server:latest
-    numInstances: 1 # optional (defaults to 1)
     healthCheckPath: /
     # envVars:
     #   - key: DATABASE_URL
@@ -15,3 +12,6 @@ services:
     #     type: password
     #     generateValue: true
         
+
+    image:
+      url: vaultwarden/server:latest
