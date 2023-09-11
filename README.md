@@ -7,6 +7,25 @@ This is a sample repo to run the latest version of [Vaultwarden](https://github.
 |SIGNUPS_ALLOWED|No|Allows users to sign up, set it to `false` after you make your own account on your hosted instance if you don't want anyone else to be able to sign up, allowed values are `true` or `false`|
 |WEB_VAULT_ENABLED|No|Allows access to the web interface without needing the desktop and mobile clients or browser extensions. Values are `true` or `false`|
 
+# Connection String
+You can get it from whatever host you use.
+### PlanetScale
+For PlanetScale it provides multiple formats, you need to find the one that looks like this:  
+```
+mysql://<username>:<password>@<host>/<database_name>
+```  
+Manually append this to the end:
+```
+?sslaccept=strict&ssl_ca=/etc/ssl/certs/ca-certificates.crt
+```
+End result format:
+```
+mysql://<username>:<password>@<host>/<database_name>?sslaccept=strict&ssl_ca=/etc/ssl/certs/ca-certificates.crt
+```
+### Other free database providers:
+- [Fly.io](https://fly.io/)
+- [ElephantSQL](https://www.elephantsql.com/)
+
 ## Deployment
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/mostafa-abdelbrr/vaultwarden-render)
