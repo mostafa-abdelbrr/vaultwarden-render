@@ -1,6 +1,7 @@
 services:
   # A Docker web service
   - type: web
+    plan: free
     name: vaultwarden-render
     runtime: image
     healthCheckPath: /
