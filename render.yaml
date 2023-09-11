@@ -7,7 +7,7 @@ services:
     healthCheckPath: /
     envVars:
       - key: DATABASE_URL
-        type: connectionString
+        property: connectionString
         sync: false
       - key: ADMIN_TOKEN
         type: password
