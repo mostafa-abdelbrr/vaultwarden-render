@@ -4,14 +4,14 @@ services:
     name: vaultwarden-render
     runtime: image
     image:
-      url: docker.io/vaultwarden/server:latest
+      url: vaultwarden/server:latest
     numInstances: 1 # optional (defaults to 1)
     healthCheckPath: /
-    envVars:
-      - key: DATABASE_URL
-        property: connectionString
-        sync: false
-      - key: ADMIN_TOKEN
-        type: password
-        generateValue: true
+    # envVars:
+    #   - key: DATABASE_URL
+    #     property: connectionString
+    #     sync: false
+    #   - key: ADMIN_TOKEN
+    #     type: password
+    #     generateValue: true
         
