@@ -12,7 +12,7 @@ You can get it from whatever host you use.
 ### PlanetScale
 For PlanetScale it provides multiple formats, you need to find the one that looks like this:  
 ```
-mysql://<username>:<password>@<host>/<database_name>
+<database_type>://<username>:<password>@<host>/<database_name>
 ```  
 Manually append this to the end:
 ```
