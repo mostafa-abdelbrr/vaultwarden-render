@@ -4,15 +4,13 @@ services:
     plan: free
     name: vaultwarden-render
     runtime: image
-    healthCheckPath: /
-    # envVars:
-    #   - key: DATABASE_URL
-    #     property: connectionString
-    #     sync: false
-    #   - key: ADMIN_TOKEN
-    #     type: password
-    #     generateValue: true
-        
-
     image:
       url: vaultwarden/server:latest
+    healthCheckPath: /
+    envVars:
+      - key: DATABASE_URL
+        property: connectionString
+      - key: ADMIN_TOKEN
+        type: password
+        generateValue: true
+      
