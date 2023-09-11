@@ -2,7 +2,9 @@ services:
   # A Docker web service
   - type: web
     name: vaultwarden-render
-    runtime: docker
+    runtime: image
+    image:
+      url: docker.io/vaultwarden/server:latest
     numInstances: 1 # optional (defaults to 1)
     healthCheckPath: /
     envVars:
