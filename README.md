@@ -20,7 +20,7 @@ Manually append this to the end:
 ```
 End result format:
 ```
-mysql://<username>:<password>@<host>/<database_name>?sslaccept=strict&ssl_ca=/etc/ssl/certs/ca-certificates.crt
+<database_type>://<username>:<password>@<host>/<database_name>?sslaccept=strict&ssl_ca=/etc/ssl/certs/ca-certificates.crt
 ```
 ### Other free database providers:
 - [Fly.io](https://fly.io/)
