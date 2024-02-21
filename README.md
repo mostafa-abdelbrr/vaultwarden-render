@@ -25,7 +25,7 @@ End result format:
 ### Other free database providers:
 - [Fly.io](https://fly.io/)
 - [ElephantSQL](https://www.elephantsql.com/)
-- [Supebase](https://supabase.com/)  
+- [Supabase](https://supabase.com/)  
 For more as well as usage limits and databse types, check [this gist](https://gist.github.com/bmaupin/0ce79806467804fdbbf8761970511b8c). Please note that it must be a database backend supported by Vaultwarden itself like MySQL and Postgres! If you find any more comprehensive list of free database backends, please hit me up in issues.
 
 ## Deployment
