@@ -33,4 +33,4 @@ For more as well as usage limits and databse types, check [this gist](https://gi
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/mostafa-abdelbrr/vaultwarden-render)
 
 ## Upgrading
-Just manually deploy latest commit on Render. If you get DB connection errors, shut it down completely from the settings and then restart after a few minutes or set the DB connections environment variable to a number less than or equal to half the max limit provided by the DB hosting service to avoid this problem.
+This uses Vaultwarden's latest Docker image, so just manually deploy latest commit on Render. If you get DB connection errors, shut it down completely from the settings and then restart after a few minutes or set the DB connections environment variable to a number less than or equal to half the max limit provided by the DB hosting service to avoid this problem.
