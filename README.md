@@ -1,5 +1,5 @@
 # Vaultwarden on Render
-This is a sample repo to run the latest version of [Vaultwarden](https://github.com/dani-garcia/vaultwarden) on Render. You need to add any free database backend (like PlanetScale) using the environment variables provided by the Vaultwarden Wiki. Below you can find some of the required and recommended ones:
+This is a sample repo to run the latest version of [Vaultwarden](https://github.com/dani-garcia/vaultwarden) on Render. You need to add any free database backend (like PlanetScale) using the environment variables provided by the Vaultwarden Wiki. Please check their wiki/documentation for more environment variables and how to use them. Below you can find some of the required (bare minimum to run this hosting configuration) and recommended ones:
 |Environment Variable|Required?|Explanation|
 |---|-|---|
 |ADMIN_TOKEN|No|For admin access to admin dashboard, use [this wiki page](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page) for instructions on how to generate a secure token. This repo will auto generate a value which you can change later by going to your Render dashboard then go to your service then go to `Environment` tab end edit its value. If you want to completely disable it then remove the environment variable entirely|
