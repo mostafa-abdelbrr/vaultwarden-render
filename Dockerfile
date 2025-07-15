@@ -1,2 +1,2 @@
 FROM vaultwarden/server:latest
-COPY vaultwarden.rsa /data
+COPY vaultwarden.pem /data/rsa_key.pem
